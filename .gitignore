@@ -42,6 +42,14 @@ local.properties
 # PDT-specific
 .buildpath
 
+#######
+## Idea
+.idea
+
+######
+## Linux
+[Dd]ebug*/
+[Rr]elease*/
 
 #################
 ## Visual Studio

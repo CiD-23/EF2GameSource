@@ -13,6 +13,7 @@
 //
 //
 
+#include "actor.h"
 #include "actor_enemymanager.h"
 #include "_pch_cpp.h"
 

@@ -1767,7 +1767,7 @@ HelperNode* HelperNode::FindClosestHelperNode( Actor &self , int mask , float ma
 			
 			Player* player;
 			player = GetPlayer(0);
-			if ( !player ) return false;
+			if ( !player ) return nullptr;
 
 			if ( player->WithinDistance( node->origin , minDistanceFromPlayer ) )
 				continue;
@@ -2298,7 +2298,7 @@ HelperNode* HelperNode::FindClosestHelperNodeThatCannotSeeEntity( Actor &self , 
 			//Check if node is within the minimum distance of the player
 			Player* player;
 			player = GetPlayer(0);
-			if ( !player ) return false;
+			if ( !player ) return nullptr;
 
 			if ( player->WithinDistance( node->origin , minDistFromPlayer ) )
 				continue;

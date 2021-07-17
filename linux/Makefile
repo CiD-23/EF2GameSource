@@ -30,7 +30,7 @@ BD=debug$(ARCH)$(GLIBC)
 BR=release$(ARCH)$(GLIBC)
 CMDIR=$(MOUNT_DIR)/Shared/qcommon
 GDIR=$(MOUNT_DIR)/dlls/game
-DLLINC = $(MOUNT_DIR)/DLLs
+DLLINC = $(MOUNT_DIR)/dlls
 SHAREINC = $(MOUNT_DIR)/Shared
 EXECINC  = $(MOUNT_DIR)/Executable
 LIBINC   = $(MOUNT_DIR)/Libs
@@ -58,7 +58,7 @@ RPMARCH=i386
 VENDOR=unknown
 endif #alpha test
 
-BASE_CFLAGS=-Dstricmp=strcasecmp -Dstrcmpi=strcasecmp -Dstrnicmp=strncasecmp -pipe -I../dlls
+BASE_CFLAGS=-Dstricmp=strcasecmp -Dstrcmpi=strcasecmp -Dstrnicmp=strncasecmp -pipe -I$(DLLINC)
 ifeq ($(PLATFORM_ARCH),x86_64)
 BASE_CFLAGS+=-m32
 endif
